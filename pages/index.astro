@@ -1,0 +1,28 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Добро пожаловать!</h1>
+			<p>
+				Добро пожаловать на мой сайт, посвящённый домашним животным
+			</p>
+			<img src="/pic/1731857597805.jpg">
+			<p>
+				Домашние животные бывают разными: кошки, собаки, попугаи...
+			</p>
+			<img src="/pic/1731857612509.jpg">
+		</main>
+		<Footer />
+	</body>
+</html>
